@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: W2OuXU6fBBjl97VUv+8ccG5eHOe7r17M8iPwEm1JIcQgo8EQK3NJky0DzAtyVA2UaGYCxy/uWSc+pf/z6GF9wskngRVbqUaqEJ17v/b9HbkM2TCgXCdZKHXRGpe20Tqo+kPS/eCvNLjqKX4hNy8T7KplaG4if6l3jXS+wA019ZpDZ6ETNXoYop83UzVQTQRlv7nglICpSnWXntxbU1NkLUL5w+X6whqmp9IEejCSCJSvqicJ+aI1aD6QZg9yMzqJbljtj/2wOFtWkNaLzbiPsSytMYOKGmB4btf055T92KQtNBVb+9WVunBsG7BSEeE5yciR/UAoNbIauYOCuhBf32GmSLeKYXnDNbB2pjltFSiOLON3oRsJ4So4tD2l1/L2SFqgN7KkXO49oKX26w/r/JgbTLKTrGoyKa7IZpVKQrJq1XnRHsjn4bK3KuDa9nJhAjzgoarKxznZ4zba/4qvK/kGUIt8Wq2+TcAv+WfUNV2pJgqBErfvc7wiGgaRSv+XC9ziA9rmM4zvMFnHBuXLCenHiJ5/NKp6azM9gKHBs0DeuWpwuEnglHyIkREYOXWecWKfclPNkwrs1Sl+HE/2i4bMra77awgHgrTgdUFmkBL6gF03SYVRsx4dYbRDV+EtHzwyeqQoRiY+thdvz5sVuxvFJcj08nKrbHH1sAdtCH8=
+  app: rocky-hollows-36533
+  on:
+    repo: tcw5038/react-trello-testing
